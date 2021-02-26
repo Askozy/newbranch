@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #2a3b40;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+
+/*Intro
+========================*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    background: url("../images/intro.jpg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.intro__title {
+    color: #ad6c12;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 60px;
+    vertical-align: center;
+}
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 750px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.intro__subtitle {
+    font-size: 90px;
+    color: #2c3a42;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+}
+
+.into__inner {
+    width: 100%;
+    max-width: 555px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+}
+
+
+/*Header
+========================*/
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #d2d7d9;
+    margin-left: 110px;
+}
+
+
+/*Navigation
+=======================*/
+
+.nav {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 110px 0 0;
+    display: flex;
+    font-weight: 700;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 20px;
+    color: #d2d7d9;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #dd9737;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: #f3ad4d;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+
+/* Button
+=====================*/
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px;
+    background: #fff;
+    color: #2c3a42;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.1s linear, color 0.1s linear;
+}
+
+.btn:hover {
+    background-color: rgba(44, 58, 66, 0.5);
+    color: #fff;
+}
+
+
+/* Arrow
+=====================*/
+
+.arrow {
+    transition: all 0.2s linear;
+    margin: 0 auto 60px;
+}
+
+.button {
+    text-align: center;
+}
+
+.arrow:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
+/* Spoons
+=====================*/
+
+.spoons {
+    margin: 70px 0;
+    text-align: left;
+    display:flex;
+}
+
+.spoons__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.spoons__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 560px;
+    margin: 0 100px;
+
+
+}
+.spn__photo {
+    float: right;
+    display: flex;
+    margin: 10px 70px 10px 0;
+    vertical-align: top;
+}
+
+
+/* Features
+=====================*/
+
+.features {
+    background-color: #fff;
+}
+
+.feat {
+      display: flex;
+}
+
+.features__item {
+    width: 33.33333%;
+    margin: 100px 80px 100px 60px;
+    text-align-last: left
+
+}
+
+.features__icon {
+    margin-bottom: 30px;
+}
+
+.features__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #2a3b40;
+}
+
+.features__text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #2a3b40;
+}
+
+
+/* Food
+=====================*/
+
+
+.food {
+    background: url("../images/india/background.png") center no-repeat;
+    display: flex;
+    width: 100%;
+     -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+
+}
+.food__item {
+    width: 100%;
+    display: flex;
+}
+
+.fod__title {
+    font-size: 77px;
+    line-height: normal;
+
+    font-family: 'Cookie', cursive;
+    text-align: center;
+}
+
+.food__text {
+    text-align: center;
+    margin-bottom: 37px;
+
+
+
+}
+.fod__subtitle {
+    font-size: 47px;
+    text-transform: uppercase;
+    color: #ad6c12;
+    font-weight: 700;
+
+}
+
+.food__box {
+    color: #2c3a42;
+    width: 50%;
+    text-align: center;
+    transition: all 0.2s linear;
+
+
+}
+.food__box:hover {
+    background: #2c3a42;
+    color: #fff;
+}
+
+
+
+
+    .food__inner {
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1080px;
+    height: 1020px;
+    margin: 90px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.food__title {
+      margin: 80px auto 0;
+    vertical-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.food__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.fcon__item {
+    transition: all 0.2s linear;
+}
+.fcon__item:hover img {
+    opacity: 0.6;
+    background-color: rgb(80, 80, 80);
+}
+.fcon__item:hover .food__box{
+
+      background-color: rgba(80, 80, 80, 0.6);
+    color: #fff;
+
+
+}
+.fcon1 {
+    text-decoration: none;
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    transition: opacity .2s linear;
+}
+.fcon1:hover {
+    color: #fff;
+}
+.food__price {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+
+
+
+.food__icon {
+width:  50%;
+}
+
+
+
+
+
+
+
+
+/*background:  linear-gradient(to bottom, #, #);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
